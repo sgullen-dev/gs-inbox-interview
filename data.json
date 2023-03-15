@@ -1,0 +1,70 @@
+{
+  "people": [
+    {
+      "id": "a859389e-da38-4c95-81b4-7bec9a70f30e",
+      "firstName": "Chelsey",
+      "lastName": "Swift",
+      "self": true
+    },
+    {
+      "id": "1d0b28a9-51c1-4dfe-bf89-8d802051dba7",
+      "firstName": "Ara",
+      "lastName": "O'Reilly",
+      "self": false
+    },
+    {
+      "id": "17d53d6c-1c91-4bd2-81bf-d812d813b730",
+      "firstName": "Jefferey",
+      "lastName": "Will",
+      "self": false
+    },
+    {
+      "id": "82d0d0bd-8e3a-415c-8adf-0798a12033de",
+      "firstName": "Telly",
+      "lastName": "King",
+      "self": false
+    },
+    {
+      "id": "2966df49-ad52-4930-8b8b-4c38ec671ca1",
+      "firstName": "Jevon",
+      "lastName": "Weissnat",
+      "self": false
+    },
+    {
+      "id": "7de01dba-8e36-4c06-b974-f87529058c17",
+      "firstName": "Christy",
+      "lastName": "Jacobson",
+      "self": false
+    },
+    {
+      "id": "91cadb94-15b3-497f-a792-92dc3b163412",
+      "firstName": "Khalid",
+      "lastName": "King",
+      "self": false
+    },
+    {
+      "id": "f170c888-e832-4580-b1f8-b7c69f89bd5c",
+      "firstName": "Duncan",
+      "lastName": "Ondricka",
+      "self": false
+    },
+    {
+      "id": "741e8025-5a89-4b03-9769-f9e8a89e1b27",
+      "firstName": "Alvina",
+      "lastName": "Sporer",
+      "self": false
+    },
+    {
+      "id": "7bb47e9c-c05c-499a-830c-ae534a6fb594",
+      "firstName": "Ervin",
+      "lastName": "Purdy",
+      "self": false
+    },
+    {
+      "id": "5f03ddd5-af79-414a-b40a-01924ed273ef",
+      "firstName": "Violette",
+      "lastName": "Hilll",
+      "self": false
+    }
+  ]
+}

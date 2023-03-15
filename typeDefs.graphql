@@ -1,0 +1,57 @@
+scalar DateTime
+
+type Person {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  self: Boolean!
+  lastMessage: Message
+  lastRead: DateTime
+}
+
+type Message {
+  id: ID!
+  sender: Person!
+  recipient: Person!
+  body: String!
+  timestamp: DateTime!
+}
+
+type Query {
+  self: Person!
+  people: [Person!]!
+  messages(personId: ID): [Message!]!
+}
+
+interface MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+}
+
+type SendMessageMutationResponse implements MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+  result: Message
+}
+
+type MarkReadMutationResponse implements MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+  result: Person
+}
+
+type Mutation {
+  sendMessage(
+    messageId: ID!
+    recipientId: ID!
+    body: String!
+  ): SendMessageMutationResponse
+  markRead(personId: ID!, lastRead: DateTime!): MarkReadMutationResponse
+}
+
+type Subscription {
+  messageReceived: Message
+}
