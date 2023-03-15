@@ -3,14 +3,20 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
+    "vite:dev": "vite",
     "gql:server": "node --no-warnings server/index.js"
   },
   "engines": {
     "node": ">=16"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.10",
+    "date-fns": "^2.29.3",
     "graphql": "^16.6.0",
-    "graphql-ws": "^5.12.0"
+    "graphql-ws": "^5.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@apollo/server": "^4.5.0",
@@ -18,6 +24,11 @@
     "@graphql-tools/graphql-file-loader": "^7.5.16",
     "@graphql-tools/load-files": "^6.6.1",
     "@graphql-tools/schema": "^9.0.17",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/uuid": "^9.0.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -26,6 +37,10 @@
     "pino": "^8.11.0",
     "pino-http": "^8.3.3",
     "pino-pretty": "^10.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
     "ws": "^8.13.0"
   }
 }
