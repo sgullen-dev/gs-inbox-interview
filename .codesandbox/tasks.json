@@ -1,0 +1,15 @@
+{
+  "setupTasks": ["yarn install"],
+  "tasks": {
+    "start-backend": {
+      "name": "Backend",
+      "command": "PORT=4000 yarn run gql:server",
+      "runAtStart": true
+    },
+    "start-vite": {
+      "name": "Vite",
+      "command": "API_BASE_URL=https://${HOSTNAME}-4000.csb.app yarn run vite:dev",
+      "runAtStart": true
+    }
+  }
+}
