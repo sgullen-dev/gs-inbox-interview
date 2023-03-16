@@ -6,6 +6,17 @@ In this interview, you're provided with a partially completed frontend applicati
 
 The goal is to engage in a problem-solving dialogue, not find a single right answer or complete every feature. In fact, there are probably more features than we'll have time to implement in this session -- and that's ok!
 
+## Local setup
+
+Requirements:
+
+- `node`: >=16
+- `yarn`
+
+1. Install dependencies: `yarn install`
+2. Start backend server: `yarn run gql:server` _or_ `PORT=8000 yarn run gql:server`
+3. Start frontend server: `yarn run vite:dev` _or_ `API_BASE_URL=http://localhost:8000 yarn run vite:dev`
+
 ## The Application
 
 You're building a chat application that allows a user to engage in two-way messaging with the application's other users. The two main sections of the application are:

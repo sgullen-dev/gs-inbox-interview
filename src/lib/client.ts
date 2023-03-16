@@ -5,12 +5,10 @@ import { createClient } from "graphql-ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 
 // Create HTTP transport link (for `query` and `mutation` operations)
-const httpLink = new HttpLink({ uri: "http://localhost:4000/graphql/" });
+const httpLink = new HttpLink({ uri: __GRAPHQL_API_URL__ });
 
 // Create WebSocket transport link (for `subscription` operations)
-const wsLink = new GraphQLWsLink(
-  createClient({ url: "ws://localhost:4000/subscriptions" })
-);
+const wsLink = new GraphQLWsLink(createClient({ url: __WEBHOOKS_API_URL__ }));
 
 // If the operation type is `subscription`, use the WebSocket transport link.
 // Otherwise, use the HTTP transport link.
