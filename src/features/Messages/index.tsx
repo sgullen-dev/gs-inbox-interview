@@ -6,6 +6,8 @@ import MessagesInput from "./components/MessagesInput";
 import MessagesListSkeleton from "./components/MessagesListSkeleton";
 import MessagesNoPerson from "./components/MessagesNoPerson";
 
+import { v4 as uuid } from "uuid";
+
 interface MessagesProps {
   selectedPerson?: PersonType;
 }
