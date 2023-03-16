@@ -40,7 +40,7 @@ const PeopleList = ({
       aria-label="people list"
       className={"p-4 space-y-4 divide-y divide-gray-200"}
     >
-      {/* TODO: sort people by last message */}
+      {/* TODO: determine correct sorting for the person list ... */}
 
       {people.map((person, index) => {
         const selected = person.id === selectedPersonId;
@@ -72,7 +72,7 @@ const PeopleList = ({
                 {person.lastMessage && person.lastMessage.body}
               </div>
 
-              {/* TODO: add unread indicator */}
+              {/* TODO: show <UnreadIndicator /> when there are unread messages ... */}
             </div>
           </div>
         );
