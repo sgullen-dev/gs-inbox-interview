@@ -8,7 +8,9 @@ import { getMainDefinition } from "@apollo/client/utilities";
 const httpLink = new HttpLink({ uri: __GRAPHQL_API_URL__ });
 
 // Create WebSocket transport link (for `subscription` operations)
-const wsLink = new GraphQLWsLink(createClient({ url: __WEBHOOKS_API_URL__ }));
+const wsLink = new GraphQLWsLink(
+  createClient({ url: __SUBSCRIPTIONS_API_URL__ })
+);
 
 // If the operation type is `subscription`, use the WebSocket transport link.
 // Otherwise, use the HTTP transport link.

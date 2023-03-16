@@ -10,13 +10,13 @@ const wsProtocol = "ws:";
 
 const webhooksApiUrl = `${httpProtocol}//${hostname}${
   port ? `:${port}` : ""
-}${pathname}webhooks/`;
+}${pathname}webhooks`;
 const graphqlApiUrl = `${httpProtocol}//${hostname}${
   port ? `:${port}` : ""
-}${pathname}graphql/`;
+}${pathname}graphql`;
 const subscriptionsApiUrl = `${wsProtocol}//${hostname}${
   port ? `:${port}` : ""
-}${pathname}subscriptions/`;
+}${pathname}subscriptions`;
 
 // https://vitejs.dev/config/
 export default defineConfig({

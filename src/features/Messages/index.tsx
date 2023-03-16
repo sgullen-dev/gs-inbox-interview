@@ -1,3 +1,5 @@
+import { v4 as uuid } from "uuid";
+
 import { MessageType, PersonType } from "../../lib/types";
 
 import MessagesButton from "./components/MessagesButton";
@@ -5,8 +7,7 @@ import MessagesEmpty from "./components/MessagesEmpty";
 import MessagesInput from "./components/MessagesInput";
 import MessagesListSkeleton from "./components/MessagesListSkeleton";
 import MessagesNoPerson from "./components/MessagesNoPerson";
-
-import { v4 as uuid } from "uuid";
+import Message from "./components/Message";
 
 interface MessagesProps {
   selectedPerson?: PersonType;

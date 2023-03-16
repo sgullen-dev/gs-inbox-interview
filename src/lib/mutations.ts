@@ -54,7 +54,7 @@ export const MARK_READ_MUTATION: TypedDocumentNode<
   MarkReadVariables
 > = gql`
   mutation MarkRead($personId: ID!, $lastRead: DateTime!) {
-    markRead(personId: $personId, timestamp: $timestamp) {
+    markRead(personId: $personId, lastRead: $lastRead) {
       code
       success
       message

@@ -11,7 +11,7 @@ function DevControls() {
   );
 
   const handleMockMessage = () => {
-    fetch(`${__WEBHOOKS_API_URL__}${selectedPersonId}`, {
+    fetch(`${__WEBHOOKS_API_URL__}/${selectedPersonId}`, {
       method: "POST",
     });
   };
