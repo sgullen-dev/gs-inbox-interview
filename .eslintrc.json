@@ -17,5 +17,9 @@
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "rules": { "react/react-in-jsx-scope": "off" }
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "no-empty-pattern": "warn"
+  }
 }
