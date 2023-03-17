@@ -6,7 +6,7 @@ interface MessageButtonProps extends React.ComponentPropsWithoutRef<"button"> {
 
 /** A <button/> element wrapper that accept a forwarded ref and has pre-set styles */
 const MessagesButton = forwardRef<HTMLButtonElement, MessageButtonProps>(
-  ({ loading, disabled, ...rest }, ref) => {
+  function MessagesButtonComponent({ loading, disabled, ...rest }, ref) {
     const classes = `text-white p-4 py-3 gap-2 text-center inline-flex items-center font-medium rounded-lg ${
       loading
         ? "bg-blue-400"

@@ -1,5 +1,9 @@
 import { v4 as uuid } from "uuid";
+import { useQuery, useMutation, useSubscription } from "@apollo/client";
 
+import { MARK_READ_MUTATION, SEND_MESSAGE_MUTATION } from "../../lib/mutations";
+import { GET_PEOPLE_QUERY, GET_MESSAGES_QUERY } from "../../lib/queries";
+import { MESSAGE_RECEIVED_SUBSCRIPTION } from "../../lib/subscriptions";
 import { MessageType, PersonType } from "../../lib/types";
 
 import MessagesButton from "./components/MessagesButton";

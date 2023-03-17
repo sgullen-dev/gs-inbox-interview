@@ -1,4 +1,8 @@
-const PeopleListSkeleton = ({ count = 5 }) => {
+interface PeopleListSkeletonProps {
+  count?: number;
+}
+
+const PeopleListSkeleton = ({ count = 5 }: PeopleListSkeletonProps) => {
   return (
     <div
       role="status"

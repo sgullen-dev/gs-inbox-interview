@@ -13,8 +13,12 @@ const MessagesListSkeleton = () => {
   );
 };
 
+interface MessageSkeletonProps {
+  self?: boolean;
+}
+
 /** A message skeleton used by MessageListSkeleton */
-const MessageSkeleton = ({ self = false }) => {
+const MessageSkeleton = ({ self = false }: MessageSkeletonProps) => {
   return (
     <div className={`flex ${self ? "justify-end" : ""}`}>
       <div className="flex flex-col gap-1">

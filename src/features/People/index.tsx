@@ -25,7 +25,7 @@ const People = ({ selectedPersonId, setSelectedPersonId }: PeopleProps) => {
 
 interface PeopleListProps {
   people: PersonType[];
-  selectedPersonId?: String;
+  selectedPersonId?: string;
   setSelectedPersonId: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
@@ -46,18 +46,16 @@ const PeopleList = ({
         const selected = person.id === selectedPersonId;
 
         return (
-          <div
-            role="tab"
-            aria-selected={selected}
+          <button
             key={`people-list-item-${person.id}`}
-            className={`flex flex-col justify-between cursor-pointer ${
+            className={`flex flex-col w-full justify-between cursor-pointer ${
               index !== 0 && "pt-4"
             }`}
             onClick={() => setSelectedPersonId(person.id)}
           >
-            <div className="flex justify-between items-center overflow-hidden">
+            <div className="flex w-full justify-between items-center overflow-hidden">
               <div
-                className={`text-gray-800 truncate ${
+                className={`text-gray-800 flex-grow text-left truncate ${
                   selected ? "font-semibold" : ""
                 }`}
               >
@@ -67,14 +65,14 @@ const PeopleList = ({
                 {person.lastMessage && timeAgo(person.lastMessage.timestamp)}
               </div>
             </div>
-            <div className="flex justify-between items-center overflow-hidden">
+            <div className="flex w-full justify-between items-center overflow-hidden">
               <div className="text-gray-500 text-sm truncate">
                 {person.lastMessage && person.lastMessage.body}
               </div>
 
               {/* TODO: show <UnreadIndicator /> when there are unread messages ... */}
             </div>
-          </div>
+          </button>
         );
       })}
     </div>
