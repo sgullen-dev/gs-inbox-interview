@@ -8,9 +8,9 @@ interface MutationResponseType<T> {
   result: T;
 }
 
-type SendMessageData = { sendMessage: MutationResponseType<MessageType> };
+export type SendMessageData = { sendMessage: MutationResponseType<MessageType> };
 
-interface SendMessageVariables {
+export interface SendMessageVariables {
   messageId: string;
   recipientId: string;
   body: string;

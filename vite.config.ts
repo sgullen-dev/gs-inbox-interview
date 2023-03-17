@@ -6,7 +6,7 @@ const hostname = baseUrl.hostname;
 const pathname = baseUrl.pathname;
 const port = baseUrl.port;
 const httpProtocol = baseUrl.protocol;
-const wsProtocol = "ws:";
+const wsProtocol = "wss:";
 
 const webhooksApiUrl = `${httpProtocol}//${hostname}${
   port ? `:${port}` : ""
